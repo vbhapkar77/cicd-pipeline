@@ -10,6 +10,13 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/maheshNagtilak', (req, res) => {
+    res.json({
+        status: 200,
+        message: "Hi Mahesh, CI CD sucessfully done."
+    })
+})
+
 app.listen(8080, () => {
     console.log('server running on port 8080')
 })
