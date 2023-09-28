@@ -24,5 +24,11 @@ jobs:
     - name: Check all docker images
       run: docker image ls
 
+    - name: add tag name for pushing purpose
+      run: docker tag cicd-pipeline:latest vbhapkar77/cicd-pipeline:latest
+
+    - name: Check all docker images after tagging
+      run: docker image ls
+
     - name: Push to Dockerhub
       run: docker push vbhapkar77/cicd-pipeline:latest
