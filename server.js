@@ -13,7 +13,14 @@ app.get('/', (req, res) => {
 app.get('/mahesh', (req, res) => {
     res.json({
         status: 200,
-        message: "Hi Mahesh, CI CD sucessfully done."
+        message: "Hi Mahesh, checking /mahesh."
+    })
+})
+
+app.get('/mahesh/users', (req, res) => {
+    res.json({
+        status: 200,
+        message: "Hi Mahesh, users loaded."
     })
 })
 
