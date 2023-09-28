@@ -21,5 +21,8 @@ jobs:
     - name: Build the Docker image
       run: docker build -t cicd-pipeline .
 
+    - name: Check all docker images
+      run: docker images
+
     - name: Push to Dockerhub
       run: docker push vbhapkar77/cicd-pipeline:latest
