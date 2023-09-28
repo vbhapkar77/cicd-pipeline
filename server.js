@@ -6,7 +6,7 @@ const app = express()
 app.get('/', (req, res) => {
     res.json({
         status: 200,
-        message: "Hello Priya. There is a message from Vishal"
+        message: "Hi Mahesh CI/CD pipeline done"
     })
 })
 
